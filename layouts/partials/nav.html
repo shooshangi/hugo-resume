@@ -23,11 +23,6 @@
             <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
           </li>
       {{ end }}
-      {{ if .Site.Params.showOpenSource }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#{{ default "open" .Site.Params.openSourceAlternateName }}">{{ default "Open Source" .Site.Params.openSourceAlternateName }}</a>
-          </li>
-      {{ end }}
       {{ if .Site.Params.showPublications }}
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/#{{ default "Publications" .Site.Params.publicationsAlternateName }}">{{ default "Publications" .Site.Params.publicationsAlternateName }}</a>
